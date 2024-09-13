@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Engagement Platform</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Patient Engagement Platform</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="navigateTo('appointments')">Appointments</a></li>
+            <li><a href="#" onclick="navigateTo('reminders')">Reminders</a></li>
+            <li><a href="#" onclick="navigateTo('messages')">Messages</a></li>
+            <li><a href="#" onclick="navigateTo('profile')">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="appointments" class="hidden">
+            <h2>Create Appointment</h2>
+            <form>
+                <label for="doctor">Doctor:</label>
+                <select id="doctor">
+                    {% for doctor in doctors %}
+                        <option value="{{ doctor.doctor_id }}">{{ doctor.doctor_name }} - {{ doctor.specialization }}</option>
+                    {% endfor %}
+                </select><br>
+                <label for="appointment-date">Date:</label>
+                <input type="date" id="appointment-date"><br>
+                <label for="appointment-time">Time:</label>
+                <input type="time" id="appointment-time"><br>
+                <button type="button" onclick="createAppointment()">Create Appointment</button>
+            </form>
+        </section>
+        <section id="reminders" class="hidden">
+            <h2>Create Reminder</h2>
+            <form>
+                <label for="medication-name">Medication Name:</label>
+                <input type="text" id="medication-name"><br>
+                <label for="reminder-time">Time:</label>
+                <input type="time" id="reminder-time"><br>
+                <button type="button" onclick="createReminder()">Create Reminder</button>
+            </form>
+        </section>
+        <section id="messages" class="hidden">
+            <h2>Send Message</h2>
+            <form>
+                <label for="message-content">Message:</label>
+                <textarea id="message-content"></textarea><br>
+                <button type="button" onclick="sendMessage()">Send Message</button>
+            </form>
+            <div id="message-list"></div>
+        </section>
+        <section id="profile" class="hidden">
+            <h2>Update Profile</h2>
+            <form>
+                <label for="profile-name">Name:</label>
+                <input type="text" id="profile-name"><br>
+                <label for="profile-contact">Contact:</label>
+                <input type="text" id="profile-contact"><br>
+                <button type="button" onclick="updateProfile()">Update Profile</button>
+            </form>
+            <div id="profile-info"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Patient Engagement Platform</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
