@@ -1,0 +1,6 @@
+message_id,patient_name,doctor_id,timestamp,content
+1,Jane Doe,1,2024-09-10 09:00,Can we reschedule my appointment?
+2,John Doe,2,2024-09-10 10:00,I have a question about my prescription.
+3,Jane Smith,3,2024-09-10 11:00,Can you review my latest test results?
+4,Emily Davis,4,2024-09-10 13:00,Thank you for the consultation yesterday.
+5,Michael Johnson,5,2024-09-10 14:00,Do I need to fast before my blood test?

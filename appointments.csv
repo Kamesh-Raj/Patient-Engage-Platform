@@ -1,0 +1,6 @@
+appointment_id,patient_name,doctor_id,appointment_date,appointment_time
+1,Jane Doe,1,2024-09-20,09:00
+2,John Doe,2,2024-09-21,10:00
+3,Jane Smith,3,2024-09-22,11:00
+4,Emily Davis,4,2024-09-23,13:00
+5,Michael Johnson,5,2024-09-24,14:00

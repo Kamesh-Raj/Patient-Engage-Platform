@@ -1,0 +1,6 @@
+doctor_id,doctor_name,specialization,contact,email
+1,Dr. John Smith,Cardiology,123-456-7890,john.smith@example.com
+2,Dr. Emily Johnson,Dermatology,234-567-8901,emily.johnson@example.com
+3,Dr. Michael Brown,Neurology,345-678-9012,michael.brown@example.com
+4,Dr. Sarah Davis,Pediatrics,456-789-0123,sarah.davis@example.com
+5,Dr. William Wilson,Orthopedics,567-890-1234,william.wilson@example.com

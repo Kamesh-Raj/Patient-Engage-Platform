@@ -1,0 +1,6 @@
+record_id,patient_name,record_type,description,date
+1,Jane Doe,Blood Test,Cholesterol levels are high,2024-09-01
+2,John Doe,X-Ray,Fracture in left arm,2024-09-05
+3,Jane Smith,MRI,Normal brain scan,2024-09-10
+4,Emily Davis,Ultrasound,No abnormalities detected,2024-09-15
+5,Michael Johnson,Blood Test,Normal blood sugar levels,2024-09-20
