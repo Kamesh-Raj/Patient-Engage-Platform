@@ -1,0 +1,13 @@
+patient_engagement_platform/
+│
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   ├── styles.css
+│   └── script.js
+├── data/
+│   ├── doctors.csv
+│   ├── messages.csv
+│   ├── reminders.csv
+│   └── health_records.csv
